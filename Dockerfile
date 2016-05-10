@@ -20,7 +20,8 @@ RUN pip install pillow
 
 # Add python script
 ADD ./generate.py /opt/generate.py
+RUN mkdir -p /opt/output
 
-WORKDIR /opt
+WORKDIR /opt/output
 
-ENTRYPOINT ["python", "generate.py", "-n", "/usr/bin/nona"]
+ENTRYPOINT ["python", "/opt/generate.py", "-n", "/usr/bin/nona"]
