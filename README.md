@@ -12,7 +12,7 @@ quadeare/docker_multiresolution_pannellum:latest <image>
 
 You can modify output destination and image name. The image must be in the same folder you parametered.
 
-This exemple creates a multiresolution of "my_image.jpg" in the folder were you are.
+This exemple creates a multiresolution of "my_image.jpg" in the folder where you are.
 
 ```sh
 $ docker run --rm -it -v $(pwd):/opt/output \
